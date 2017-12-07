@@ -9,7 +9,7 @@ class Song
     @name = name
     @artist = artist
     if @@artists.include?("artist") == false
-      @@artists << self
+      @@artists << self.artist
     end
     @genre = genre
     if @@genres.include?("genre") == false
