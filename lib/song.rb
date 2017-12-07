@@ -13,7 +13,7 @@ class Song
     end
     @genre = genre
     if @@genres.include?("genre") == false
-      @@genres << genre
+      @@genres << self.genre
     end
   end
 
