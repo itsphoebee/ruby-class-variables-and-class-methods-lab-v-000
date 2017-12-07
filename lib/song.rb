@@ -8,11 +8,8 @@ class Song
     @@count +=1
     @name = name
     @artist = artist
-    if @@artists.include?("artist") == false
       @@artists << self.artist
-    end
     @genre = genre
-    if @@genres.include?("genre") == false
       @@genres << self.genre
     end
   end
